@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<net name="saved_model" version="10">
+	<layers>
+		<layer id="0" name="bidirectional_1/backward_gru_1/gru_cell_5/bias/Read/ReadVariableOp/Output_0/Data__const" type="Const" version="opset1">
+			<data element_type="f32" offset="0" shape="2,1536" size="12288"/>
+			<output>
+				<port id="1" precision="FP32">
+					<dim>2</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="bidirectional_1/backward_gru_1/gru_cell_5/bias/Read/ReadVariableOp/sink_port_0" type="Result" version="opset1">
+			<input>
+				<port id="0">
+					<dim>2</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="1" to-layer="1" to-port="0"/>
+	</edges>
+	<meta_data>
+		<MO_version value="2020.2.0-60-g0bc66e26ff"/>
+		<cli_parameters>
+			<blobs_as_inputs value="True"/>
+			<data_type value="float"/>
+			<disable_nhwc_to_nchw value="False"/>
+			<disable_resnet_optimization value="False"/>
+			<disable_weights_compression value="False"/>
+			<enable_concat_optimization value="False"/>
+			<extensions value="DIR"/>
+			<framework value="tf"/>
+			<freeze_placeholder_with_value value="{}"/>
+			<generate_deprecated_IR_V2 value="False"/>
+			<generate_deprecated_IR_V7 value="False"/>
+			<generate_experimental_IR_V10 value="True"/>
+			<input_model_is_text value="False"/>
+			<keep_quantize_ops_in_IR value="True"/>
+			<keep_shape_ops value="False"/>
+			<log_level value="ERROR"/>
+			<mean_scale_values value="{}"/>
+			<mean_values value="()"/>
+			<model_name value="saved_model"/>
+			<move_to_preprocess value="False"/>
+			<output value="['bidirectional_1/backward_gru_1/gru_cell_5/bias/Read/ReadVariableOp']"/>
+			<output_dir value="DIR"/>
+			<placeholder_data_types value="{}"/>
+			<progress value="False"/>
+			<reverse_input_channels value="False"/>
+			<saved_model_dir value="DIR"/>
+			<scale_values value="()"/>
+			<silent value="False"/>
+			<stream_output value="False"/>
+			<unset unset_cli_parameters="batch, disable_fusing, disable_gfusing, finegrain_fusing, input, input_checkpoint, input_meta_graph, input_model, input_shape, placeholder_shapes, saved_model_tags, scale, tensorboard_logdir, tensorflow_custom_layer_libraries, tensorflow_custom_operations_config_update, tensorflow_object_detection_api_pipeline_config, tensorflow_use_custom_operations_config, transformations_config"/>
+		</cli_parameters>
+	</meta_data>
+</net>

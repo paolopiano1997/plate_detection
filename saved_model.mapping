@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="bidirectional_1/backward_gru_1/gru_cell_5/bias/Read/ReadVariableOp" out_port_id="0"/>
+		<IR id="0" name="bidirectional_1/backward_gru_1/gru_cell_5/bias/Read/ReadVariableOp/Output_0/Data__const" out_port_id="1"/>
+	</map>
+</mapping>
